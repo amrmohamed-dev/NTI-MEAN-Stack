@@ -86,6 +86,17 @@ Messages are displayed using **Toastify UI notifications**.
 
 ---
 
+## Demo Login Credentials
+
+For demo and testing purposes, you can use the following credentials:
+
+- **Username:** amr  
+- **Password:** 123
+
+These credentials are used only for demonstration and client-side validation.
+
+---
+
 ## Technologies Used
 
 * HTML5
