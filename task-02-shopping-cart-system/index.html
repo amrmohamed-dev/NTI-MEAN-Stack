@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="./public/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <button onclick="history.back()">← Back</button>
+
+      <h1>Shopping Cart System</h1>
+
+      <h2 id="welcomeMsg">Welcome 👋</h2>
+
+      <button id="logoutBtn" onclick="logout()" style="display: none">
+        Logout
+      </button>
+
+      <div class="offer-box">
+        <span>Offer ends in:</span>
+        <span id="count">60</span> seconds
+      </div>
+
+      <div class="grid">
+        <section class="box">
+          <h2>Products</h2>
+          <div id="prod"></div>
+        </section>
+
+        <section class="box">
+          <div class="flex-between">
+            <h2>Cart (Stack)</h2>
+
+            <div class="actions">
+              <button id="undoBtn" onclick="undo()" disabled>Undo</button>
+
+              <button id="checkoutBtn" onclick="checkout()" disabled>
+                Checkout
+              </button>
+            </div>
+          </div>
+
+          <h3 id="totalPrice">Total: 0</h3>
+
+          <div id="cart"></div>
+        </section>
+
+        <section class="box">
+          <h2>Waiting Queue</h2>
+          <div id="queue"></div>
+        </section>
+      </div>
+    </div>
+
+    <div id="loginModal" class="login-overlay">
+      <div class="login-box">
+        <h2>Login</h2>
+
+        <input id="loginUser" type="text" placeholder="Username" />
+        <input id="loginPass" type="password" placeholder="Password" />
+
+        <button onclick="handleLogin()">Login</button>
+        <button onclick="history.back()">← Back</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./public/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Student Management System</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .container {
+        max-width: 900px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-9">
+      <button class="btn btn-outline-secondary mb-3" onclick="history.back()">
+        ← Back
+      </button>
+
+      <h1 class="text-center mb-4">Student Management System</h1>
+
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label">Student Name</label>
+          <input type="text" id="studentName" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Student Mark</label>
+          <input
+            type="number"
+            id="studentMark"
+            class="form-control"
+            min="0"
+            max="100"
+          />
+        </div>
+      </div>
+
+      <div class="mt-3 mb-3">
+        <button id="addBtn" class="btn btn-primary">Add Student</button>
+        <button id="updateBtn" class="btn btn-success d-none">
+          Update Student
+        </button>
+      </div>
+
+      <div class="mb-1">
+        <input
+          type="text"
+          id="searchInput"
+          class="form-control"
+          placeholder="Enter student name to search"
+        />
+      </div>
+      <div class="row my-3 text-center">
+        <div class="col-md-4">
+          <div class="alert alert-info">
+            <strong>Average Mark:</strong>
+            <span id="avgMark">0</span>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="alert alert-success">
+            <strong>Top Student:</strong>
+            <span id="topStudent">-</span>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="alert alert-danger">
+            <strong>Lowest Student:</strong>
+            <span id="lowStudent">-</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <table class="table table-bordered table-hover text-center">
+          <thead class="table-dark">
+            <tr>
+              <th>#</th>
+              <th>Student Name</th>
+              <th>Mark</th>
+              <th>Grade</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="public/script.js"></script>
+  </body>
+</html>

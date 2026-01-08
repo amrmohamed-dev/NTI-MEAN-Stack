@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Students Bonus System</title>
+    <link rel="stylesheet" href="./public/style.css" />
+  </head>
+
+  <body>
+    <button style="background-color: cornflowerblue" onclick="history.back()">
+      ← Back
+    </button>
+    <h1 class="title">Students Bonus System</h1>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Student</th>
+            <th>Attendance %</th>
+            <th>Midterm (30)</th>
+            <th>Final (50)</th>
+            <th>Tasks Avg (20)</th>
+            <th>Total + Bonus</th>
+            <th>Final Grade (100)</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody id="studentsTable"></tbody>
+      </table>
+    </div>
+
+    <div id="studentDetails"></div>
+
+    <script src="./public/script.js"></script>
+  </body>
+</html>

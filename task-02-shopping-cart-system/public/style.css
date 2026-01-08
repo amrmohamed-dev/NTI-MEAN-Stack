@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Cairo', Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  margin: 0 0 10px;
+}
+
+#logoutBtn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #d9534f;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.offer-box {
+  background: #222;
+  color: #fff;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  min-height: 200px;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #4e73df;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+#totalPrice {
+  margin-top: 8px;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding-right: 18px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.login-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: #fff;
+  padding: 18px 20px;
+  border-radius: 12px;
+  min-width: 260px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.login-box input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-box {
+    width: auto;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 18px;
+  }
+
+  .offer-box {
+    width: 100%;
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
