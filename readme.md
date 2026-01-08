@@ -57,6 +57,8 @@ Each task can be accessed directly through the dashboard, allowing easy navigati
 
 ## 🛠️ Tasks Overview
 
+> A dedicated README is included for every task with detailed explanation and demo usage instructions.
+
 ### 🎓 Task 01 – Student Management System
 
 A system for managing student records and grades, including data validation, searching, statistics calculation, and dynamic table rendering.
@@ -66,8 +68,6 @@ A system for managing student records and grades, including data validation, sea
 ### 🛒 Task 02 – Shopping Cart System
 
 An interactive shopping cart simulation implementing structured data handling, user interaction workflows, state persistence, and UI feedback mechanisms.
-
-A dedicated README is included for this task with detailed explanation and demo usage instructions.
 
 ---
 
@@ -82,7 +82,8 @@ A grading and bonus management system that focuses on data validation, condition
 1. Download or clone the project files
 2. Open the main `index.html` file to access the dashboard
 3. Navigate to any task through the provided links
-   -> Each task runs independently and can be reviewed or extended separately
+
+> Each task runs independently and can be reviewed or extended separately.
 
 ---
 
