@@ -65,7 +65,7 @@ function loadCategory(category = null) {
                 <span class="card__footer-value">${p.rating}</span>
                 <span class="card__footer-text">rating</span>
               </p>
-              <a href="/details.html?id=${p.id}" class="btn btn--green btn--smal gap">Details</a>
+              <a href="details.html?id=${p.id}" class="btn btn--green btn--smal gap">Details</a>
             </div>
           </div>`;
     });
