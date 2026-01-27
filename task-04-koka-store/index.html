@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,300i,700"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="public/css/shared.css" />
+    <link rel="stylesheet" href="public/css/index.css" />
+
+    <title>Koka Store</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__logo" onclick="location.assign('/')">Koka Store</div>
+
+      <a href="cart.html" class="navbar__cart">
+        🛒 Cart <span id="nav-cart-count">0</span>
+      </a>
+    </nav>
+
+    <main class="main">
+      <button class="categories-toggle">☰ Categories</button>
+      <div class="overlay"></div>
+
+      <div class="layout">
+        <aside class="categories">
+          <h3 class="categories__title">Categories</h3>
+          <ul class="categories__list"></ul>
+        </aside>
+
+        <div class="card-container"></div>
+      </div>
+    </main>
+
+    <div class="footer">
+      <p class="footer__copyright">
+        &copy; by Amr Mohammed. All rights reserved.
+      </p>
+    </div>
+
+    <script src="public/js/shared.js"></script>
+    <script src="public/js/index.js"></script>
+  </body>
+</html>

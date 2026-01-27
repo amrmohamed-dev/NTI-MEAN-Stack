@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link rel="stylesheet" href="public/css/shared.css" />
+    <link rel="stylesheet" href="public/css/details.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__logo" onclick="location.assign('/')">Koka Store</div>
+
+      <a href="cart.html" class="navbar__cart">
+        🛒 Cart <span id="nav-cart-count">0</span>
+      </a>
+    </nav>
+
+    <main class="product">
+      <section class="product__gallery"></section>
+
+      <section class="product__info">
+        <h1 id="product-title"></h1>
+        <p class="brand" id="product-brand"></p>
+
+        <div class="rating">⭐ <span id="product-rating"></span></div>
+
+        <p class="product-desc" id="product-desc"></p>
+
+        <div class="price">$<span id="product-price"></span></div>
+
+        <div class="cart-box">
+          <div class="quantity">
+            <button id="decrease">-</button>
+            <span id="quantity">1</span>
+            <button id="increase">+</button>
+          </div>
+
+          <button id="add-to-cart">Add to Cart</button>
+        </div>
+      </section>
+
+      <section class="product__reviews">
+        <h3>Customer Reviews</h3>
+      </section>
+    </main>
+
+    <div class="footer">
+      <p class="footer__copyright">
+        &copy; by Amr Mohammed. All rights reserved.
+      </p>
+    </div>
+
+    <script src="public/js/shared.js"></script>
+    <script src="public/js/details.js"></script>
+  </body>
+</html>
